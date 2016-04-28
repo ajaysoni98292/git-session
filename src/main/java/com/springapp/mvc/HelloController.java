@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HelloController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
+
         System.out.println("===========conflict resolved");
         System.out.println("Git demo is going on ....");
 		model.addAttribute("message", "Hello world!");
